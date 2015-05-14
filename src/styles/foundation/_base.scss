@@ -1,0 +1,54 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    font-size: 62.5%; 
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: hsl(0,0,97);
+    font-size: 1.3em;
+    line-height: 1.5;
+    color: hsl(0, 0, 40);
+}
+
+a {
+    text-decoration: none;
+}
+
+button, input, optgroup, select, textarea, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+input {
+    outline: none;
+    height: 2.1rem;
+    padding: 0.1rem 0.4rem 0;
+
+    &:focus {
+        // border: 1px solid hsl(0,0,70);
+    }
+
+    &[type=checkbox] {
+        visibility: hidden;
+        width: 1.8rem;
+        vertical-align: top;
+    }
+}
