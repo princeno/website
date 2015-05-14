@@ -1,0 +1,10 @@
+.c-sitenav__link {
+    display: inline-block;
+    color: 1.4rem;
+    padding: 0 0.4rem;
+
+    &.is-active {
+        background-color: hsl(0, 0, 0);
+        color: hsl(0, 0, 100);
+    }
+}

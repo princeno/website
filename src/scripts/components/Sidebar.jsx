@@ -2,6 +2,14 @@ const debug = require('debug')('app:component:sidebar');
 const React = require('react');
 const Router = require('react-router');
 const Link = Router.Link;
+const classNames = require('classnames');
+
+var navItems = [
+  { to: 'works', name: 'Works' },
+  { to: 'blog', name: 'Blog' },
+  { to: 'about', name: 'About' },
+  { to: 'contact', name: 'Contact' }
+]; 
 
 module.exports = React.createClass({
   mixins: [Router.State],
@@ -19,19 +27,27 @@ module.exports = React.createClass({
           <div><small>Design works</small></div>
           <div><small>2012 - 2015</small></div>
         </div>
-        {this.renderMenu()}
+        {this.renderNav()}
       </div>
     );
   },
 
-  renderMenu: function () {
+  renderNav: function () {
     return (
       <ul className="sidebar__nav">
-        <li><Link to="works">Works</Link></li>
-        <li><Link to="blog">Blog</Link></li>
-        <li><Link to="about">About</Link></li>
-        <li><Link to="contact">Contact</Link></li>
+        {navItems.map(this.renderNavItem)}
       </ul>
+    );
+  },
+  
+  renderNavItem: function (item) {
+    var linkClass = classNames('c-sitenav__link', {
+      'is-active': this.isActive(item.to)
+    });
+    return (
+      <li className="c-sitenav__item" key={item.to}>
+        <Link className={linkClass} to={item.to}>{item.name}</Link>
+      </li>
     );
   }
 });
