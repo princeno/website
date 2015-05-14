@@ -17,17 +17,26 @@ module.exports = React.createClass({
   render: function () {
     return (
       <div id="sidebar">
+        {this.renderHead()}
+        {this.renderNav()}
+        {this.renderFoot()}
+      </div>
+    );
+  },
+
+  renderHead: function () {
+    return (
+      <div>
         <img src="images/logo.png" className="sidebar__logo" />
         <div className="sitebar__title">
           <h1>Princeno</h1>
           <h1>Xiao.</h1>
         </div>
         <div className="c-line" />
-        <div className="sidebar__desc">
-          <div><small>Design works</small></div>
-          <div><small>2012 - 2015</small></div>
+        <div className="sidebar__desc c-tight-line">
+          <small>Design works</small><br/>
+          <small>2012 - 2015</small>
         </div>
-        {this.renderNav()}
       </div>
     );
   },
@@ -48,6 +57,17 @@ module.exports = React.createClass({
       <li className="c-sitenav__item" key={item.to}>
         <Link className={linkClass} to={item.to}>{item.name}</Link>
       </li>
+    );
+  },
+
+  renderFoot: function () {
+    return (
+      <div className="sidebar__foot">
+        <div className="c-tight-line">
+          <small>Doing our part with great love</small><br/>
+          <small>© 2015 Princeno Design™</small>
+        </div>
+      </div>
     );
   }
 });

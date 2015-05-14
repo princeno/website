@@ -7,10 +7,26 @@
 
     .sidebar__logo {
         display: block;
+        margin-bottom: 14px;
+    }
+ 
+    .sitebar__title {
+        margin-bottom: 0.5rem;
+    }
+
+    .sidebar__desc {
+        margin-top: 0.5rem;
     }
 
     .sidebar__nav {
-        margin-left: -0.4rem;
+        margin-top: 5.5rem;
+        margin-left: -0.5rem;
+    }
+
+    .sidebar__foot {
+        position: absolute;
+        bottom: 33px;
+        left: 44px;
     }
 
     .c-line {

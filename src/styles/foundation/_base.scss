@@ -13,8 +13,10 @@ html {
 body {
     font-family: "Helvetica Neue", Arial, sans-serif;
     background-color: hsl(0,0,70);
+    font-weight: 200;
+    letter-spacing: 1px;
     font-size: 1.3em;
-    line-height: 1.5;
+    line-height: 1.4;
     color: hsl(0, 0, 0);
 }
 
@@ -39,15 +41,15 @@ fieldset {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 2.4rem;
+    font-weight: 200;
+    letter-spacing: 2px;
     margin: 0;
-    font-weight: 100;
 }
 
 small {
     font-size: 1rem;
-    line-height: 1.4rem;
 }
 
 input {
