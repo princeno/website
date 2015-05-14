@@ -29,6 +29,21 @@
         left: 44px;
     }
 
+    .sidebar__social {
+        @include clearfix;
+
+        margin-bottom: 1.5rem;
+
+        li {
+            float: left;
+            margin-right: 2.5rem;
+
+            &:first-child {
+                margin-top: -0.2rem;
+            }
+        }
+    }
+
     .c-line {
         height: 1px;
         width: 9px;

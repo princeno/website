@@ -63,6 +63,11 @@ module.exports = React.createClass({
   renderFoot: function () {
     return (
       <div className="sidebar__foot">
+        <ul className="sidebar__social">
+          <li><a><img src="images/weibo.png"/></a></li>
+          <li><a><img src="images/wechat.png"/></a></li>
+          <li><a><img src="images/douban.png"/></a></li>
+        </ul>
         <div className="c-tight-line">
           <small>Doing our part with great love</small><br/>
           <small>© 2015 Princeno Design™</small>
