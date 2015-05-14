@@ -1,0 +1,17 @@
+#sidebar {
+    width: 300px;
+    background-color: hsl(0, 0, 100);
+    position: fixed;
+    height: 100%;
+    padding: 56px 44px;
+
+    .sidebar__logo {
+        display: block;
+    }
+
+    .c-line {
+        height: 1px;
+        width: 9px;
+        background-color: hsl(0, 0, 0);
+    }
+}
